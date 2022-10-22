@@ -93,18 +93,7 @@ a {
   align-items: center;
   grid-template-columns: repeat(2, max-content);
 }
-.slogan {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--slogan-color);
-}
 
-.slogan h2 {
-  font-size: 0.9rem;
-  color: var(--slogan-text-color);
-}
 .nav:target {
   --state-close: scale(1);
   --state-hamburguer: scale(0);
@@ -207,7 +196,8 @@ a {
   flex-shrink: 0;
 }
 
-.contenido-slider > iframe {
+.contenido-slider > img {
+  object-fit: cover;
   width: 800px;
   height: 70%;
   border: none;
@@ -522,9 +512,6 @@ footer {
 /*------*/
 
 @media (max-width: 991px) {
-  .slogan-text {
-    text-align: center;
-  }
   .fixed-button {
     left: 78%;
     width: 60px;
@@ -630,7 +617,7 @@ footer {
   .contenedor {
     height: auto;
   }
-  .contenido-slider > iframe {
+  .contenido-slider > img {
     width: 95%;
   }
   .content {
