@@ -205,6 +205,7 @@ a {
 
 .contenido-slider > div {
   width: 40%;
+  padding: 10px;
 }
 
 .contenido-slider h2 {
@@ -636,7 +637,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .contenido-slider {
     flex-direction: column-reverse;
   }
