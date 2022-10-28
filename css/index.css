@@ -247,24 +247,24 @@ main .sections {
 
 .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
 }
 
 .card {
-  width: calc(34% - 20px);
+  width: calc(25% - 5px);
   background-color: var(--card-color);
   color: var(--button-color-text);
   padding: 40px 10px;
   text-align: center;
-  height: 400px;
-  margin: 0 20px;
+  height: 250px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.021);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.box {
-  margin: auto;
-}
+
 .box img {
   font-size: 2rem;
   border-radius: 50%;
@@ -274,12 +274,10 @@ main .sections {
 .box h3 {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
-.box p {
-  padding: 20px;
-  margin: 30px 0;
-}
+
 /*Ours*/
 .ours {
   background-color: var(--card-color);
@@ -292,6 +290,7 @@ main .sections {
 }
 
 .ours__container {
+  min-height: 500px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -513,6 +512,12 @@ footer {
 /*------*/
 
 @media (max-width: 991px) {
+  .content {
+    margin-top: 0px;
+  }
+  .one {
+    margin-top: 100px;
+  }
   .fixed-button {
     left: 78%;
     width: 60px;
