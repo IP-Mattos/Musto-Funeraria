@@ -19,6 +19,7 @@
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+ 
 }
 
 body {
@@ -28,6 +29,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.hide{
+  visibility: hidden;
 }
 .header {
   margin: 0 auto;
@@ -306,6 +311,7 @@ main .sections {
 .ours__text h3 {
   margin-bottom: 20px;
 }
+
 .ours__img {
   width: 40%;
 }

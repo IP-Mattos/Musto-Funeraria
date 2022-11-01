@@ -4,7 +4,7 @@ let contador = 1;
 let width = sliderIndividual[0].clientWidth;
 let intervalo = 3000;
 let enter = true;
-
+let button = document.querySelector(".fixed-button")
 window.addEventListener("resize", function () {
   width = sliderIndividual[0].clientWidth;
 });
@@ -31,3 +31,8 @@ function slides() {
     }, 1500);
   }
 }
+
+addEventListener('scroll', () =>{
+  window.scrollY > 1200 ?  button.classList.remove("hide"):   button.classList.add("hide")
+})
+
