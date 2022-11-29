@@ -282,7 +282,19 @@ main .sections {
   font-weight: 500;
   font-size: 1.5rem;
 }
-
+.button_services{
+  margin: auto;
+  color: var(--button-color);
+  background: var(--button-color-text);
+  font-weight: 600;
+  width: 150px;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-decoration: none;
+}
 /*Ours*/
 .ours {
   background-color: var(--card-color);
